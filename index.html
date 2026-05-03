@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* 鎖定全螢幕，隱藏捲動條 */
         body, html {
             margin: 0;
             padding: 0;
@@ -21,7 +20,6 @@
         .serif { font-family: 'LXGW WenKai TC', serif; }
         .accent-green { color: #6b8e23; }
         
-        /* 水平滑動容器 */
         .slider-container {
             display: flex;
             width: 100vw;
@@ -29,7 +27,6 @@
             transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
         }
         
-        /* 單一投影片版面 */
         .slide-page {
             min-width: 100vw;
             height: 100vh;
@@ -42,7 +39,6 @@
             position: relative;
         }
         
-        /* 撐滿畫面的巨型卡片 */
         .card {
             background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(12px);
@@ -82,7 +78,6 @@
             border: 4px solid white;
         }
 
-        /* 頁數指示器改至左下角 */
         #page-indicator {
             position: fixed;
             bottom: 1.5rem;
@@ -100,7 +95,6 @@
 </head>
 <body>
 
-    <!-- 頁數指示器 -->
     <div id="page-indicator"></div>
 
     <div class="slider-container" id="slider">
@@ -111,8 +105,7 @@
                 <div class="text-9xl mb-8">💆‍♀️🌿🕯️</div>
                 <h1 class="serif text-8xl md:text-9xl font-bold mb-8 accent-green tracking-wide">舒蜜達 <span class="text-amber-700">Somida</span></h1>
                 <h2 class="serif text-5xl md:text-6xl text-stone-600 mb-12">芳香美學個人工作室 訪談紀錄</h2>
-               <p class="text-4xl tracking-widest text-stone-500 italic mb-4">從心出發，讓壓力與疲憊隨香氣消散</p>
-               <p class="text-3xl text-stone-500 italic">— 從在地創業案例探討「服務精神 × 人本管理 × 教育啟發」</p>
+                <p class="text-4xl tracking-widest text-stone-500 italic mb-8">從心出發，讓壓力與疲憊隨香氣消散</p>
                 <div class="text-4xl text-stone-600 font-bold flex justify-center gap-12 mb-10 bg-white/60 py-4 px-12 rounded-full shadow-sm">
                     <span>林宛儀</span>
                     <span>蔡岱倫</span>
@@ -139,7 +132,7 @@
                 <h2 class="serif text-6xl font-bold mb-6 flex items-center"><span class="text-7xl mr-6">💻</span> 起源：PTT 上的初次亮相 (1/2)</h2>
                 <div class="card-content pr-48">
                     <p class="text-4xl text-stone-700 mb-8 leading-relaxed">
-                        這是一切的開端。當初回台南時，在 PTT 上的自我介紹。真誠的文字與專業的背景，在短短幾天內獲得了熱烈迴響，也開啟了舒蜜達的療癒旅程。
+                        這是一切的開端。當初回台南時，在 PTT 上的自我介紹。真誠的文字與專業的背景，在短短 10 天內獲得了熱烈迴響，也開啟了舒蜜達的療癒旅程。
                     </p>
                     <div class="bg-[#0c0c0c] p-8 rounded-2xl shadow-inner grid grid-cols-1 md:grid-cols-2 gap-8 items-center flex-1 min-h-0">
                         <img src="spa/1.jpg" alt="PTT 自介截圖 1" class="w-full h-full object-contain border border-stone-800 rounded-lg hover:scale-[1.02] transition-transform cursor-zoom-in" onclick="openLightbox(this.src)">
@@ -189,8 +182,6 @@
                     </div>
                     <div class="bg-amber-50 p-8 rounded-3xl shadow-sm border border-amber-100">
                         <p><strong class="text-amber-800 text-5xl block mb-4">歸鄉的契機：</strong>在大公司體會到忽視員工權益的辛酸。110 年家人生病決定回鄉，遇上 COVID-19 疫情。這份「被迫停下」的契機，反而成了深耕台南的養分，因禍得福。</p>
-                   <p class="text-3xl text-stone-500 italic">此職涯轉折展現出個體在面對價值衝突時的自我覺察與重建能力。
-                  </p>
                     </div>
                 </div>
             </div>
@@ -213,8 +204,6 @@
                     <div class="mb-10">
                         <strong class="text-4xl text-green-800 block mb-6">多元服務項目：</strong>
                         <div class="flex flex-wrap gap-4">
-                            <p class="text-3xl text-stone-500 mt-6">做出差異化，透過身心靈整合提升顧客體驗與市場競爭力。
-</p>
                             <span class="bg-green-100 text-green-800 px-5 py-2 rounded-full text-3xl">筋絡按摩</span>
                             <span class="bg-green-100 text-green-800 px-5 py-2 rounded-full text-3xl">精油按摩</span>
                             <span class="bg-green-100 text-green-800 px-5 py-2 rounded-full text-3xl">泰式按摩</span>
@@ -236,7 +225,7 @@
                         </div>
                         <div class="bg-green-50 p-8 rounded-3xl border border-green-200">
                             <h3 class="font-bold text-green-800 mb-4 text-4xl">📍 公園店（全新據點）</h3>
-                            <p class="text-3xl leading-relaxed">新租透天厝，一樓延續媽媽的書店夢，樓上則是舒蜜達的療癒空間，團隊人數增加中。</p>
+                            <p class="text-3xl leading-relaxed">新租透天厝，一樓延續媽媽的書店夢，樓上則是舒蜜達的療癒空間，團隊已達 10 人。</p>
                         </div>
                     </div>
                 </div>
@@ -260,17 +249,14 @@
                             <img src="spa/bus.jpg" alt="營業登記" class="w-full max-h-[50vh] object-contain rounded-xl shadow-md border-4 border-stone-100 cursor-zoom-in hover:scale-[1.02] transition-transform" onclick="openLightbox(this.src)">
                         </div>
                         <div class="w-full md:w-7/12 text-4xl leading-relaxed text-stone-700">
-                           <p class="mb-4 text-amber-800 font-bold">
-除了理念與服務品質，實際經營亦需面對制度與法規：
-</p>
-<p>辦理營業登記是合法經營的第一步...
+                            <p>辦理營業登記是合法經營的第一步，根據營業稅法規，只要有營利行為且 <strong class="text-amber-700 font-bold bg-amber-50 px-2 rounded-lg">『每月營收買賣業8萬、服務業4萬元 』</strong> 的組織，不論是否為個人工作室，都會需要辦理「營業登記」。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 第 7 頁：重要事蹟 (報告人：端玲) -->
+        <!-- 第 7 頁：行銷策略 -->
         <section class="slide-page">
             <div class="card border-l-8 border-blue-400">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -280,17 +266,25 @@
                     <img src="lin.png?v=2" alt="黃端玲" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl">
                 </div>
 
-                <h2 class="serif text-6xl font-bold mb-12 flex items-center"><span class="text-7xl mr-6">🏆</span> 3. 重要事蹟</h2>
-                <div class="card-content pr-48">
-                    <ul class="space-y-10 list-disc pl-10 text-4xl leading-relaxed bg-blue-50 p-12 rounded-3xl">
-                        <li><strong class="text-blue-800">PTT 驚艷開場：</strong> 回台南初期僅宣傳 10 天，預約瞬間爆滿。</li>
-                        <li><strong class="text-blue-800">穩健擴張：</strong> 從單人工作室發展為 10 人團隊，並開拓第二據點。</li>
-                    </ul>
+                <h2 class="serif text-6xl font-bold mb-12 flex items-center"><span class="text-7xl mr-6">📣</span> 3. 行銷策略</h2>
+                <div class="card-content pr-48 space-y-10">
+                    <div class="bg-blue-50 p-10 rounded-3xl border border-blue-100 text-4xl leading-relaxed">
+                        <p class="font-bold text-blue-800 text-5xl mb-6">📱 社群媒體經營</p>
+                        <p>持續在各大社群平台發文，維持曝光與品牌形象，讓更多人認識舒蜜達。</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-3xl border border-stone-200 shadow-sm text-4xl leading-relaxed">
+                        <p class="font-bold text-amber-800 text-5xl mb-6">🔁 口碑與回頭客</p>
+                        <p>憑藉整個團隊紮實的技術與舒適療癒的環境，舒蜜達累積了大量忠實回頭客。客人主動介紹親友，不僅是對品質最真實的肯定，也讓她更確信自己認真經營的方向是對的。</p>
+                    </div>
+                    <div class="bg-green-50 p-10 rounded-3xl border border-green-200 text-4xl leading-relaxed">
+                        <p class="font-bold text-green-800 text-5xl mb-6">🏡 從口碑到擴店</p>
+                        <p>正是這份來自客人的信任與支持，給了她拓展公園店的勇氣——口碑，是舒蜜達最有力的行銷。</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 第 8 頁：重要價值觀 (報告人：端玲) -->
+        <!-- 第 8 頁：重要價值觀 -->
         <section class="slide-page">
             <div class="card border-l-8 border-purple-400">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -318,7 +312,7 @@
             </div>
         </section>
 
-        <!-- 第 9 頁：學習與經營省思 (上) -->
+        <!-- 第 9 頁：學習與經營省思 -->
         <section class="slide-page">
             <div class="card border-l-8 border-orange-400">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -330,53 +324,30 @@
 
                 <h2 class="serif text-6xl font-bold mb-12 flex items-center"><span class="text-7xl mr-6">🔮</span> 5. 值得學習與經營省思</h2>
                 
-                <div class="card-content pr-48">
+                <div class="card-content space-y-12 pr-48">
                     <div class="grid md:grid-cols-2 gap-10">
-                        <div class="bg-white p-12 rounded-3xl shadow-sm border border-stone-100">
-                            <h3 class="font-bold text-orange-800 text-4xl mb-6">✨ 追求獨特性與跨界思維</h3>
-                           <p class="text-3xl md:text-4xl leading-relaxed text-stone-700">
-除了傳統按摩技術外，更結合精油塔羅與頌缽療癒，不僅提升服務深度，也降低芳療師體力負擔。
-</p>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
+                            <h3 class="font-bold text-orange-800 text-4xl mb-4">✨ 追求獨特性與跨界思維</h3>
+                            <p class="text-3xl leading-relaxed">除了專業按摩，更融入<strong>精油塔羅</strong>與<strong>頌缽</strong>，持續進修，不僅服務客人也<strong>保留</strong>芳療師體力。</p>
                         </div>
-                        <div class="bg-white p-12 rounded-3xl shadow-sm border border-stone-100">
-                            <h3 class="font-bold text-pink-700 text-4xl mb-6">🎀 專業進修與溫暖同理</h3>
-                            <p class="text-3xl md:text-4xl leading-relaxed text-stone-700">
-針對乳癌術後女性設計專屬療程，展現高度同理心，符合「顧客導向（Customer-Oriented）」的服務設計原則。
-</p>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
+                            <h3 class="font-bold text-pink-700 text-4xl mb-4">🎀 專業進修與溫暖同理</h3>
+                            <p class="text-3xl leading-relaxed">針對乳癌術後女性推出<strong>「愛波呵護」</strong>，學習專屬淋巴引流，以細膩手法溫柔陪伴顧客調適術後身體變化。</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- 第 10 頁：學習與經營省思 (下) -->
-        <section class="slide-page">
-            <div class="card border-l-8 border-orange-400">
-                <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
-                    <div class="bg-amber-100 text-amber-900 px-6 py-3 rounded-2xl text-3xl md:text-4xl font-bold shadow-md mb-2">
-                        報告人：林宛儀
-                    </div>
-                    <img src="carz.png?v=2" alt="林宛儀" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
-                </div>
-
-                <h2 class="serif text-6xl font-bold mb-12 flex items-center"><span class="text-7xl mr-6">☕</span> 5. 值得學習與經營省思</h2>
-                
-                <div class="card-content pr-48">
-                    <div class="bg-orange-50 p-12 rounded-3xl border border-orange-200 h-full flex flex-col justify-center">
-                        <h3 class="font-bold text-orange-800 text-5xl mb-10 flex items-center">經營上的智慧轉向</h3>
-                        <div class="space-y-8 text-3xl md:text-4xl leading-relaxed text-stone-700">
+                    <div class="bg-orange-50 p-10 rounded-3xl border border-orange-200 mt-auto">
+                        <h3 class="font-bold text-orange-800 text-5xl mb-8 flex items-center">☕ 經營上的智慧轉向</h3>
+                        <div class="space-y-6 text-4xl leading-relaxed">
                             <p><strong class="text-orange-900">遇到難題：</strong> 原想在休息區自製甜點招待，卻發現準備時間不足，形成管理壓力。</p>
                             <p><strong class="text-orange-900">靈活解決：</strong> 善用「台南甜點之都」優勢，改採購在地知名小點每月更換，解決人力問題，更帶給客人驚喜！</p>
-                            <p class="text-orange-800 mt-8 bg-white p-6 rounded-2xl inline-block shadow-sm font-bold border border-orange-100">
-此轉變展現經營者具備「情境應變能力（Adaptive Strategy）」與在地資源整合能力。
-</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 第 11 頁 (原第 10 頁)：理論應用與結語 -->
+        <!-- 第 10 頁：理論應用與結語 -->
         <section class="slide-page">
             <div class="card border-l-8 border-teal-500">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -405,11 +376,7 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- 照片展區 (共 7 頁) -->
-        <!-- ========================================== -->
-
-        <!-- 第 11 頁：照片 1 (地圖指引) -->
+        <!-- 第 11 頁：照片 1 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -432,7 +399,7 @@
             </div>
         </section>
 
-        <!-- 第 12 頁：照片 2 (店面與白板) -->
+        <!-- 第 12 頁：照片 2 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -455,7 +422,7 @@
             </div>
         </section>
 
-        <!-- 第 13 頁：照片 3 (精油塔羅) -->
+        <!-- 第 13 頁：照片 3 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -478,7 +445,7 @@
             </div>
         </section>
 
-        <!-- 第 14 頁：照片 4 (團隊壯大) -->
+        <!-- 第 14 頁：照片 4 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -502,7 +469,7 @@
             </div>
         </section>
 
-        <!-- 第 15 頁：照片 5 (環境介紹) -->
+        <!-- 第 15 頁：照片 5 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -527,7 +494,7 @@
             </div>
         </section>
 
-        <!-- 第 16 頁：照片 6 (公園店新貌) -->
+        <!-- 第 16 頁：照片 6 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -537,7 +504,7 @@
                     <img src="carz.png?v=2" alt="林宛儀" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
                 </div>
 
-                <h2 class="serif text-5xl font-bold mb-4 text-amber-900 flex items-center justify-center"><span class="text-6xl mr-4">🏡</span> 照片紀錄 (6/7) - 公園店新貌</h2>
+                <h2 class="serif text-5xl font-bold mb-4 text-amber-900 flex items-center justify-center"><span class="text-6xl mr-4">🏡</span> 照片紀錄 (6/7) - 公園店新貌 (上)</h2>
                 <div class="img-container">
                     <img src="spa/IMG_2040.jpeg" alt="公園店照片1" class="cursor-zoom-in hover:scale-[1.02] transition-transform" onclick="openLightbox(this.src)">
                     <img src="spa/IMG_2047.jpeg" alt="公園店照片2" class="cursor-zoom-in hover:scale-[1.02] transition-transform" onclick="openLightbox(this.src)">
@@ -551,7 +518,7 @@
             </div>
         </section>
 
-        <!-- 第 17 頁：照片 7 (公園店新貌) -->
+        <!-- 第 17 頁：照片 7 -->
         <section class="slide-page">
             <div class="card text-center">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -561,8 +528,7 @@
                     <img src="carz.png?v=2" alt="林宛儀" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
                 </div>
 
-                <h2 class="serif text-5xl font-bold mb-4 text-amber-900 flex items-center justify-center"><span class="text-6xl mr-4">🛋️</span> 照片紀錄 (7/7) - 公園店新貌</h2>
-                <!-- 加入 flex-wrap 讓 4 張照片可以自動排版換行，不會擠壓變形 -->
+                <h2 class="serif text-5xl font-bold mb-4 text-amber-900 flex items-center justify-center"><span class="text-6xl mr-4">🛋️</span> 照片紀錄 (7/7) - 公園店新貌 (下)</h2>
                 <div class="img-container flex-wrap gap-4">
                     <img src="spa/IMG_2041.jpeg" alt="公園店照片3" class="max-h-[38vh] cursor-zoom-in hover:scale-[1.02] transition-transform" onclick="openLightbox(this.src)">
                     <img src="spa/IMG_2042.jpeg" alt="公園店照片4" class="max-h-[38vh] cursor-zoom-in hover:scale-[1.02] transition-transform" onclick="openLightbox(this.src)">
@@ -579,10 +545,10 @@
         </section>
 
         <!-- ========================================== -->
-        <!-- 省思專區 (共 3 頁) -->
+        <!-- 省思專區（全新改寫） -->
         <!-- ========================================== -->
 
-        <!-- 第 16 頁：省思 1 -->
+        <!-- 省思 1：動機純粹的力量 -->
         <section class="slide-page">
             <div class="card border-l-8 border-stone-700 bg-stone-50">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -592,18 +558,18 @@
                     <img src="de.jpg?v=2" alt="蔡岱倫" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
                 </div>
 
-                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思 - 從跨域轉職到展現韌性</h2>
+                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思一：做一件事，出發點有多重要？</h2>
                 <div class="card-content pr-48">
-                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700">
-                        <p class="mb-8">在這次訪談中，創辦人<strong>「將危機化為轉機」</strong>的創業韌性帶給我極大的啟發。</p>
-                        <p class="mb-8">許多人在面對大環境劇變（如疫情）或職涯瓶頸時，往往會選擇妥協。但她卻能敏銳覺察內心對「純粹服務」的渴望，勇敢捨棄不適合的舒適圈，將返鄉的無奈轉化為深耕在地市場的絕佳契機。</p>
-                        <p>這種不畏未知、隨遇而安卻又充滿執行力的態度，讓我深刻體會到：<strong class="text-amber-700">成功往往屬於那些能在逆境中看見光芒，並果斷採取行動的人。</strong></p>
+                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700 space-y-8">
+                        <p>她離開壽險業的核心原因，不是薪水、不是前途，而是<strong>「不想帶著目的性去服務人」</strong>。這句話讓我印象很深刻。</p>
+                        <p>我以前以為努力、有能力就夠了，但這次訪談讓我意識到：<strong class="text-amber-700">一個人做事的出發點，其實決定了他能走多遠。</strong></p>
+                        <p>真正出於熱情與純粹動機去做的事，才經得起時間考驗——也才會讓旁人感受到，甚至願意一再回來。這讓我重新思考：自己未來在選擇工作或投入一件事時，動機究竟是什麼？</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 第 17 頁：省思 2 -->
+        <!-- 省思 2：被對待的方式，決定你如何對待別人 -->
         <section class="slide-page">
             <div class="card border-l-8 border-stone-700 bg-stone-50">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -613,18 +579,18 @@
                     <img src="de.jpg?v=2" alt="蔡岱倫" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
                 </div>
 
-                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思 - 靈活的商業經營思維</h2>
+                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思二：壞的經歷，也可以是最好的教材</h2>
                 <div class="card-content pr-48">
-                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700">
-                        <p class="mb-8">在商業策略上，她展現了極高的靈活度與跨界思維。舒蜜達初期沒有砸大錢做廣告，僅靠著在 PTT 上發布真誠的自我介紹，短短 10 天內就獲得熱烈迴響並瞬間預約爆滿。</p>
-                        <p>此外，面對經營難題時的<strong>「轉念」</strong>也讓我學到很多。例如，原先她想親自手作甜點招待客人，卻發現準備時間不足，反而成為管理壓力；</p>
-                        <p>她立刻善用「台南甜點之都」的地緣優勢，改為採購在地知名小點並每月更換。這不僅解決了人力負擔，還為客人創造了滿滿的驚喜感。</p>
+                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700 space-y-8">
+                        <p>她在大公司工作時，親身經歷過員工不被尊重的職場文化。但她沒有讓那段經歷成為怨恨，而是把它化為一種承諾：<strong>「我不要讓我的員工也這樣被對待。」</strong></p>
+                        <p>這是一種很珍貴的<strong class="text-amber-700">「反向學習」</strong>——從負面經驗中萃取出正面的價值觀，並落實在自己的管理方式上。</p>
+                        <p>這讓我想到，我們生命中那些感覺委屈或挫折的經歷，其實都有機會成為養分，只要我們選擇用不同的眼光去看待它。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 第 18 頁：省思 3 -->
+        <!-- 省思 3：「停下來」的意義 -->
         <section class="slide-page">
             <div class="card border-l-8 border-stone-700 bg-stone-50">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -634,24 +600,18 @@
                     <img src="de.jpg?v=2" alt="蔡岱倫" class="h-48 md:h-64 w-auto object-contain drop-shadow-xl rounded-2xl" style="transform: scaleX(-1);">
                 </div>
 
-                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思 - 打破框架的跨界創新</h2>
+                <h2 class="serif text-6xl font-bold mb-10 flex items-center text-stone-800 mt-6"><span class="text-7xl mr-6">💡</span> 省思三：「被迫停下」，有時是一份禮物</h2>
                 <div class="card-content pr-48">
-                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700">
-                        <p class="mb-8">同時，她也打破傳統按摩的框架，將<strong class="text-green-700">「精油塔羅」</strong>與<strong class="text-blue-700">「頌缽音療」</strong>融入服務中。</p>
-                        <p class="mb-8">精油塔羅能透過盲抽牌卡分析客人的身心現況與潛意識需求，而頌缽則透過聲音頻率引導肌肉放鬆，加深了客人的深層療癒感及體驗感。</p>
-                        <p class="text-amber-800 font-bold bg-amber-50 p-6 rounded-2xl">
-                            這些不落俗套的經營智慧，非常值得我們未來踏入職場或創業時借鏡。
-                        </p>
+                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-200 text-4xl leading-relaxed text-stone-700 space-y-8">
+                        <p>疫情、返鄉照顧家人，這些在外人眼裡看起來是「被迫中斷」的事，卻成了她深耕台南、找到自己節奏的轉捩點。</p>
+                        <p>現代人很習慣一直往前衝，覺得停下來就是落後。但這次訪談讓我體會到：<strong class="text-amber-700">有時候，那個「空白」才是讓你重新看清方向的機會。</strong></p>
+                        <p>不是每一次的停頓都是失敗，有些停頓，是為了讓你走得更穩、更遠。這是我從她身上學到的，也是我想帶走的最重要一課。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- Q&A 分頁互動區 -->
-        <!-- ========================================== -->
-
-        <!-- 第 19 頁：Q1 -->
+        <!-- Q&A 1 -->
         <section class="slide-page">
             <div class="card border-t-8 border-teal-600 bg-teal-50">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -668,7 +628,6 @@
                         <h3 class="text-4xl md:text-5xl font-bold text-stone-800 mb-6 leading-relaxed">
                             <span class="text-teal-600 text-5xl md:text-6xl mr-2">Q1.</span> 在「打造零壓力且受尊重的學習空間」中，老師應該如何調整班級經營？
                         </h3>
-                        <!-- 在 JS 互動中會觸發 reveal-answer 顯示答案 -->
                         <ul class="text-3xl md:text-4xl space-y-4 text-stone-600 flex-1 flex flex-col justify-center">
                             <li class="p-4 rounded-2xl border border-stone-100">A. 實施嚴格的集體獎懲制度</li>
                             <li class="p-4 rounded-2xl border border-stone-100 reveal-answer transition-all duration-500">
@@ -682,7 +641,7 @@
             </div>
         </section>
 
-        <!-- 第 20 頁：Q2 -->
+        <!-- Q&A 2 -->
         <section class="slide-page">
             <div class="card border-t-8 border-teal-600 bg-teal-50">
                 <div class="absolute bottom-8 right-12 flex items-end gap-5 z-20">
@@ -712,30 +671,23 @@
             </div>
         </section>
 
-        <!-- 第 21 頁：結尾頁 (團隊名單 - 滿版排列) -->
+        <!-- 結尾頁 -->
         <section class="slide-page bg-[#4a3728]">
             <div class="card border-none bg-white/95 text-center flex flex-col justify-center items-center">
                 <div class="text-8xl mb-8">✨</div>
                 <h2 class="serif text-7xl font-bold mb-10 text-amber-900 border-b-4 border-amber-200 inline-block pb-4">Thank You</h2>
-                <p class="text-3xl text-stone-500 mt-6 italic">
-療癒他人，也是一種深層的教育實踐
-</p>
+                
                 <div class="flex flex-row justify-around items-end w-full max-w-7xl mt-8 px-12">
-                    <!-- 組長：林宛儀 (保留不翻轉，看向中間) -->
                     <div class="flex flex-col items-center gap-4">
                         <span class="font-bold text-amber-800 text-4xl">組長</span>
                         <span class="font-bold text-stone-800 text-6xl tracking-widest">林宛儀</span>
                         <img src="carz.png?v=2" alt="林宛儀" class="h-64 md:h-[22rem] w-auto object-contain drop-shadow-2xl mt-6 rounded-3xl">
                     </div>
-                    
-                    <!-- 組員：蔡岱倫 (保留不翻轉，看向前方) -->
                     <div class="flex flex-col items-center gap-4">
                         <span class="font-bold text-amber-800 text-4xl">組員</span>
                         <span class="font-bold text-stone-800 text-6xl tracking-widest">蔡岱倫</span>
                         <img src="de.jpg?v=2" alt="蔡岱倫" class="h-64 md:h-[22rem] w-auto object-contain drop-shadow-2xl mt-6 rounded-3xl">
                     </div>
-                    
-                    <!-- 組員：黃端玲 (保留不翻轉，看向中間) -->
                     <div class="flex flex-col items-center gap-4">
                         <span class="font-bold text-amber-800 text-4xl">組員</span>
                         <span class="font-bold text-stone-800 text-6xl tracking-widest">黃端玲</span>
@@ -745,58 +697,51 @@
             </div>
         </section>
 
-        <!-- 第 25 頁 (原23頁)：資料來源 + 小組合照 (左右版面優化，已修正切邊問題) -->
+        <!-- 資料來源 -->
         <section class="slide-page bg-[#4a3728]">
-            <div class="card border-none bg-white/95 flex flex-col justify-center items-center py-6 px-12">
-                <!-- 左右兩欄佈局 -->
-                <div class="flex flex-col md:flex-row w-full h-full gap-8 items-center justify-center max-w-7xl">
-
-                    <!-- 左側：文字資訊 -->
+            <div class="card border-none bg-white/95 flex flex-col justify-center items-center p-12">
+                <div class="flex flex-col md:flex-row w-full h-full gap-12 items-center justify-center max-w-7xl">
                     <div class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-left pl-0 md:pl-10">
-                        <div class="text-5xl md:text-6xl mb-2">📚</div>
-                        <h2 class="serif text-5xl md:text-6xl font-bold mb-6 text-amber-900 border-b-4 border-amber-200 inline-block pb-3">資料來源</h2>
+                        <div class="text-8xl mb-6">📚</div>
+                        <h2 class="serif text-7xl font-bold mb-10 text-amber-900 border-b-4 border-amber-200 inline-block pb-4">資料來源</h2>
 
-                        <div class="space-y-4 text-2xl md:text-3xl text-stone-700 w-full bg-[#fdfaf7] p-6 rounded-3xl shadow-inner border border-stone-200">
-                            <div class="flex border-b border-stone-200 pb-3 items-start">
-                                <span class="font-bold w-40 shrink-0 text-amber-800">訪談對象：</span>
+                        <div class="space-y-8 text-4xl text-stone-700 w-full bg-[#fdfaf7] p-10 rounded-3xl shadow-inner border border-stone-200">
+                            <div class="flex border-b border-stone-200 pb-4 items-start">
+                                <span class="font-bold w-48 shrink-0 text-amber-800">訪談對象：</span>
                                 <span>Somida 舒蜜達芳香美學</span>
                             </div>
-                            <div class="flex border-b border-stone-200 pb-3 items-start">
-                                <span class="font-bold w-40 shrink-0 text-amber-800">參考網頁：</span>
-                                <span class="leading-relaxed break-all">
+                            <div class="flex border-b border-stone-200 pb-4 items-start">
+                                <span class="font-bold w-48 shrink-0 text-amber-800">參考網頁：</span>
+                                <span class="text-3xl leading-relaxed break-all">
                                     MACUS Business Center<br>
-                                    <a href="https://macusbc.com/%E6%88%90%E7%AB%8B%E5%B7%A5%E4%BD%9C%E5%AE%A4/" target="_blank" class="text-lg md:text-xl text-amber-600 hover:text-amber-800 transition-colors">https://macusbc.com/成立工作室/</a>
+                                    <a href="https://macusbc.com/%E6%88%90%E7%AB%8B%E5%B7%A5%E4%BD%9C%E5%AE%A4/" target="_blank" class="text-2xl text-amber-600 hover:text-amber-800 transition-colors">https://macusbc.com/成立工作室/</a>
                                 </span>
                             </div>
                             <div class="flex items-start">
-                                <span class="font-bold w-40 shrink-0 text-amber-800">其他來源：</span>
+                                <span class="font-bold w-48 shrink-0 text-amber-800">其他來源：</span>
                                 <span>網路搜尋、實地訪談</span>
                             </div>
                         </div>
-                        <p class="mt-6 text-xl md:text-2xl text-stone-400 font-bold">Copyright © 2024 Somida SPA</p>
+                        <p class="mt-16 text-3xl text-stone-400 font-bold">Copyright © 2024 Somida SPA</p>
                     </div>
 
-                    <!-- 右側：大張合照 (拍立得風格) -->
                     <div class="w-full md:w-1/2 flex flex-col items-center justify-center h-full">
-                        <div class="bg-white p-4 pb-6 md:p-5 md:pb-8 rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
-                            <!-- 進一步縮小圖片最大高度限制，確保在小螢幕筆電也不會切底 -->
-                            <img src="four.png" alt="小組紀錄合影" class="w-full max-h-[35vh] md:max-h-[40vh] object-contain border border-stone-200 rounded cursor-zoom-in" onclick="openLightbox(this.src)">
-                            <p class="text-center mt-3 md:mt-5 text-2xl md:text-3xl font-bold text-stone-600 serif">📸 訪談幕後花絮合影</p>
+                        <div class="bg-white p-6 pb-12 rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
+                            <img src="four.png" alt="小組紀錄合影" class="w-full max-h-[60vh] object-contain border border-stone-200 rounded cursor-zoom-in" onclick="openLightbox(this.src)">
+                            <p class="text-center mt-6 text-4xl font-bold text-stone-600 serif">📸 訪談幕後花絮合影</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
     </div>
 
-    <!-- 圖片放大檢視 (Lightbox) -->
+    <!-- Lightbox -->
     <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center cursor-zoom-out opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
         <img id="lightbox-img" src="" alt="放大圖片" class="max-w-[90vw] max-h-[90vh] object-contain rounded-xl shadow-2xl scale-95 transition-transform duration-300">
     </div>
 
-    <!-- 簡報水平切換邏輯 -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide-page');
@@ -804,7 +749,6 @@
         const slider = document.getElementById('slider');
         const indicator = document.getElementById('page-indicator');
 
-        // 初始化頁碼
         indicator.innerText = `1 / ${totalSlides}`;
 
         function updateSlide() {
@@ -812,13 +756,11 @@
             indicator.innerText = `${currentSlide + 1} / ${totalSlides}`;
         }
 
-        // Lightbox 功能函數
         function openLightbox(src) {
             const lb = document.getElementById('lightbox');
             const lbImg = document.getElementById('lightbox-img');
             lbImg.src = src;
             lb.classList.remove('hidden');
-            // 觸發重新繪製以套用動畫
             void lb.offsetWidth;
             lb.classList.remove('opacity-0');
             lbImg.classList.remove('scale-95');
@@ -831,28 +773,20 @@
             lb.classList.add('opacity-0');
             lbImg.classList.remove('scale-100');
             lbImg.classList.add('scale-95');
-            // 等待過渡動畫完成後隱藏元素
-            setTimeout(() => {
-                lb.classList.add('hidden');
-            }, 300);
+            setTimeout(() => { lb.classList.add('hidden'); }, 300);
         }
 
         function advance() {
             const currentSlideEl = slides[currentSlide];
-            // 尋找目前頁面是否有「尚未顯示」的解答
             const unrevealedAnswer = currentSlideEl.querySelector('.reveal-answer:not(.revealed)');
 
-            // 如果有解答還沒亮起，就先讓解答亮起，不要切換到下一頁
             if (unrevealedAnswer) {
                 unrevealedAnswer.classList.add('revealed');
                 unrevealedAnswer.classList.remove('border-stone-100');
                 unrevealedAnswer.classList.add('border-2', 'border-teal-400', 'bg-teal-50', 'font-bold', 'text-teal-900');
-                
                 const checkMark = unrevealedAnswer.querySelector('.check-mark');
                 if(checkMark) checkMark.classList.remove('opacity-0');
-            } 
-            // 如果解答已經亮起（或該頁根本沒有隱藏解答），才切換到下一頁
-            else if (currentSlide < totalSlides - 1) {
+            } else if (currentSlide < totalSlides - 1) {
                 currentSlide++;
                 updateSlide();
             }
@@ -862,8 +796,6 @@
             if (currentSlide > 0) {
                 currentSlide--;
                 updateSlide();
-                
-                // 返回上一頁時，可選擇性把後方投影片的答案重置回隱藏狀態（方便重新 demo）
                 for(let i = currentSlide + 1; i < totalSlides; i++) {
                     const reveals = slides[i].querySelectorAll('.reveal-answer.revealed');
                     reveals.forEach(r => {
@@ -876,38 +808,21 @@
             }
         }
 
-        // 綁定鍵盤事件
         document.addEventListener('keydown', function(event) {
-            // 如果 lightbox 打開中，按 ESC 可以關閉它
             if (!document.getElementById('lightbox').classList.contains('hidden')) {
                 if (event.key === 'Escape') closeLightbox();
-                return; // Lightbox 開啟時不觸發翻頁
-            }
-
-            if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
-                advance();
-            } 
-            else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
-                goBack();
-            }
-        });
-
-        // 綁定滑鼠點擊事件 (翻頁邏輯)
-        document.addEventListener('click', function(event) {
-            // 避免點擊 Lightbox 或 觸發圖片時觸發翻頁
-            if (event.target.closest('#lightbox') || event.target.closest('.cursor-zoom-in')) {
                 return;
             }
+            if (event.key === 'ArrowRight' || event.key === 'ArrowDown') advance();
+            else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') goBack();
+        });
 
+        document.addEventListener('click', function(event) {
+            if (event.target.closest('#lightbox') || event.target.closest('.cursor-zoom-in')) return;
             const clickX = event.clientX;
             const windowWidth = window.innerWidth;
-            
-            if (clickX > windowWidth / 2) {
-                advance();
-            } 
-            else if (clickX <= windowWidth / 2) {
-                goBack();
-            }
+            if (clickX > windowWidth / 2) advance();
+            else goBack();
         });
     </script>
 </body>
